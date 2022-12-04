@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700&display=swap');</style>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <div class="container">
+        <div class="row first">
+          <div class="col-6 col-lg-6 d-flex align-items-center">
+            <picture class="ms-3">
+              <img src="./images/logo.svg" alt="">
+            </picture>
+          </div>
+          <div class="col-6 col-lg-6">
+            <nav>
+              <ul class="main-desk">
+                <li>
+                  <a href="">About</a>
+                </li>
+                <li>
+                  <a href="">Services</a>
+                </li>
+                <li>
+                  <a href="">Projects</a>
+                </li>
+                <li>
+                  <a href="" class="pill">Contact</a>
+                </li>
+              </ul>
+              <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input type="checkbox">
+                
+                <!--
+                Some spans to act as a hamburger.
+                
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+                <ul id="menu">
+                    <li>
+                      <a href="">About</a>
+                    </li>
+                    <li>
+                      <a href="">Services</a>
+                    </li>
+                    <li>
+                      <a href="">Projects</a>
+                    </li>
+                    <li>
+                      <a href="" class="pill">Contact</a>
+                    </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="col-12 title">
+            <h1 class="mb-5">We are creatives</h1>
+            <div class="arrow">
+              <picture>
+                <img src="./images/icon-arrow-down.svg" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row inverse">
+          <div class="col-12 col-lg-6 py-lg-7 py-5 px-lg-7 px-5">
+            <h2>Transform your brand</h2>
+            <p>We are a full-service creative agency specializing in helping brands grow fast. 
+              Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <a href="" class="learn-more yellow">Learn more</a>
+          </div>
+          <div class="col-12 col-lg-6 back-egg">
+
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-12 col-lg-6 back-cup"></div>
+          <div class="col-12 col-lg-6 py-lg-7 py-5 px-lg-7 px-5">
+            <h2>Stand out to the right audience</h2>
+            <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+            <a href="" class="learn-more pink">Learn more</a>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-12 col-lg-6 graph pt-12 pb-4 px-7 text-center">
+            <div class="box mt-10">
+              <h3>Graphic design</h3>
+              <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+            </div>
+          </div>
+          
+          <div class="col-12 col-lg-6 photo pt-12 pb-4 px-7 text-center">
+            <div class="box mt-10">
+              <h3>Photography</h3>
+              <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-12 col-lg-12 text-center pt-5">
+            <h4>Client testimonials</h4>
+          </div>
+          <div class="col-12 col-lg-4 res-prof px-5 py-5">
+            <picture>
+              <img class="rounded-circle img-responsive" src="./images/image-emily.jpg" alt="">
+            </picture>
+            <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+            <p class="name mt-2">Emily R.</p>
+            <small>Marketing Director</small>
+          </div>
+          <div class="col-12 col-lg-4 res-prof px-5 py-5">
+            <picture>
+              <img class="rounded-circle img-responsive" src="./images/image-thomas.jpg" alt="">
+            </picture>
+            <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+            <p class="name mt-2">Thomas S.</p>
+            <small>Chief Operating Officer</small>
+          </div>
+          <div class="col-12 col-lg-4 res-prof px-5 py-5">
+            <picture>
+              <img class="rounded-circle img-responsive" src="./images/image-jennie.jpg" alt="">
+            </picture>
+            <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+            <p class="name mt-2">Jennie F.</p>
+            <small>Business Owner</small>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-12 col-lg-3 px-0 milkbottles">
+          </div>
+          <div class="col-12 col-lg-3 px-0 orange">
+          </div>
+          <div class="col-12 col-lg-3 px-0 cone">
+          </div>
+          <div class="col-12 col-lg-3 px-0 sugarcubes">
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-12 footer px-5 py-5">
+            <footer>
+              <picture class="footer-logo">
+                <img src="./images/logo.svg" alt="">
+              </picture>
+              <ul>
+                <li>
+                  <a href="">About</a>
+                </li>
+                <li>
+                  <a href="">Services</a>
+                </li>
+                <li>
+                  <a href="">Projects</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="">
+                    <picture>
+                      <img src="./images/icon-facebook.svg" alt="">
+                    </picture>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <picture>
+                      <img src="./images/icon-instagram.svg" alt="">
+                    </picture>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <picture>
+                      <img src="./images/icon-twitter.svg" alt="">
+                    </picture>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <picture>
+                      <img src="./images/icon-pinterest.svg" alt="">
+                    </picture>
+                  </a>
+                </li>
+              </ul>
+            </footer>
+          </div>
+        </div>
+            
+      </div>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </article>
+  </main>
+</body>
+</html>
